@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Drew Schwarz</title>
+  <meta
+    name="description"
+    content="Drew Schwarz is a sales and business development leader based in Connecticut."
+  >
+
+  <style>
+    :root {
+      --background: #0b1220;
+      --surface: rgba(15, 23, 42, 0.70);
+      --surface-strong: rgba(17, 24, 39, 0.86);
+      --text: #ecf2ff;
+      --muted: #a7b3c7;
+      --border: rgba(255, 255, 255, 0.09);
+      --accent: #7aa2ff;
+      --accent-dark: #274690;
+      --accent-soft: #4b6cb7;
+      --accent-warm: #b79d6b;
+      --glow-1: rgba(75, 108, 183, 0.24);
+      --glow-2: rgba(122, 162, 255, 0.18);
+      --glow-3: rgba(183, 157, 107, 0.14);
+      --shadow: 0 32px 90px rgba(0, 0, 0, 0.34);
+      --radius-large: 28px;
+      --radius-medium: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family:
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 12% 14%, var(--glow-1), transparent 30rem),
+        radial-gradient(circle at 88% 16%, var(--glow-3), transparent 26rem),
+        radial-gradient(circle at 76% 82%, var(--glow-2), transparent 34rem),
+        linear-gradient(135deg, #08101d 0%, #0f1726 46%, #121b2c 100%);
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    body::before,
+    body::after {
+      content: "";
+      position: fixed;
+      inset: auto;
+      width: 30rem;
+      height: 30rem;
+      border-radius: 999px;
+      filter: blur(46px);
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.58;
+    }
+
+    body::before {
+      top: -8rem;
+      right: -8rem;
+      background: radial-gradient(circle, rgba(75, 108, 183, 0.34), transparent 62%);
+    }
+
+    body::after {
+      bottom: -9rem;
+      left: -8rem;
+      background: radial-gradient(circle, rgba(183, 157, 107, 0.18), transparent 62%);
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .page {
+      position: relative;
+      z-index: 1;
+      width: min(1120px, calc(100% - 32px));
+      min-height: 100vh;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      padding: 48px 0;
+    }
+
+    .panel {
+      width: 100%;
+      overflow: hidden;
+      background:
+        linear-gradient(180deg, rgba(17, 24, 39, 0.92), rgba(12, 19, 32, 0.82)),
+        var(--surface);
+      border: 1px solid rgba(255, 255, 255, 0.10);
+      border-radius: var(--radius-large);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(18px);
+      position: relative;
+      isolation: isolate;
+    }
+
+    .panel::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at top right, rgba(122, 162, 255, 0.08), transparent 26rem),
+        radial-gradient(circle at bottom left, rgba(183, 157, 107, 0.06), transparent 24rem);
+      z-index: -1;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
+      gap: 48px;
+      padding: clamp(36px, 7vw, 84px);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 20px;
+      padding: 10px 14px;
+      color: #d6e2ff;
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 999px;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+      width: fit-content;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-warm));
+      box-shadow: 0 0 0 6px rgba(122, 162, 255, 0.08);
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 760px;
+      font-size: clamp(3.25rem, 9vw, 7.5rem);
+      line-height: 0.92;
+      letter-spacing: -0.065em;
+      color: #f6f8fe;
+      text-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+    }
+
+    .bio {
+      max-width: 720px;
+      margin: 30px 0 0;
+      color: var(--muted);
+      font-size: clamp(1.02rem, 2vw, 1.2rem);
+      line-height: 1.72;
+    }
+
+    .bio p {
+      margin: 0;
+    }
+
+    .bio p + p {
+      margin-top: 18px;
+    }
+
+
+    .cta {
+      display: inline-flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-top: 30px;
+      padding: 22px 24px;
+      max-width: 620px;
+      color: #ffffff;
+      text-decoration: none;
+      background:
+        linear-gradient(135deg, #233a6b 0%, #182942 52%, #5f4f33 100%);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-medium);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.30);
+      position: relative;
+      overflow: hidden;
+      transition:
+        transform 180ms ease,
+        box-shadow 180ms ease;
+    }
+
+    .cta::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(120deg, rgba(255, 255, 255, 0.18), transparent 45%, rgba(255, 255, 255, 0.04));
+      pointer-events: none;
+    }
+
+    .cta:hover,
+    .cta:focus-visible {
+      transform: translateY(-3px);
+      box-shadow: 0 22px 44px rgba(0, 0, 0, 0.36);
+      outline: none;
+    }
+
+    .cta span {
+      font-size: 0.92rem;
+      font-weight: 800;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    .link-card {
+      display: block;
+      padding: 24px;
+      text-decoration: none;
+      background:
+        linear-gradient(180deg, rgba(24, 33, 49, 0.92), rgba(14, 21, 34, 0.84));
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-medium);
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.20);
+      transition:
+        transform 180ms ease,
+        box-shadow 180ms ease,
+        border-color 180ms ease;
+    }
+
+    .link-card:hover,
+    .link-card:focus-visible {
+      transform: translateY(-4px);
+      border-color: rgba(122, 162, 255, 0.26);
+      box-shadow: 0 20px 42px rgba(0, 0, 0, 0.28);
+      outline: none;
+    }
+
+    .link-card span {
+      display: block;
+    }
+
+    .link-title {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: #f2f6ff;
+    }
+
+    .link-description {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .link-action {
+      margin-top: 22px;
+      color: #d4c09a;
+      font-size: 0.88rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 22px clamp(28px, 7vw, 84px);
+      color: var(--muted);
+      font-size: 0.84rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.04));
+    }
+
+    @media (max-width: 820px) {
+      .page {
+        width: min(100% - 20px, 680px);
+        padding: 10px 0;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 38px;
+        padding: 36px 24px;
+      }
+
+      h1 {
+        font-size: clamp(3.2rem, 18vw, 5.3rem);
+      }
+
+      .bio {
+        margin-top: 24px;
+        font-size: 1.05rem;
+      }
+
+      footer {
+        flex-direction: column;
+        padding: 20px 24px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .link-card {
+        transition: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <section class="panel" aria-labelledby="page-title">
+      <div class="hero">
+        <div>
+          <p class="eyebrow">Connecticut</p>
+
+          <h1 id="page-title">Drew Schwarz</h1>
+          <div class="bio">
+            <p>
+              I am an entrepreneur, growth strategist, and opinion leader in the
+              Access Control and Security industries. Areas of expertise include
+              business development, digital marketing, and small business scaling.
+            </p>
+
+            <p>
+              My work sits at the intersection of traditional industry knowledge,
+              modern sales execution, and digital marketing, with a focus on
+              building growth engines that are disciplined, measurable, and built
+              to last.
+            </p>
+
+            <p>
+              I am particularly passionate about advancing the access control
+              industry through better ideas, stronger partnerships, and a more
+              modern approach to sales and marketing. I currently focus on
+              empowering growth at Hayward Turnstiles, Excavation Solutions, and
+              other entrepreneurial ventures, while proudly supporting the
+              continued success of Connecticut small businesses.
+            </p>
+          </div>
+
+<a
+            class="cta"
+            href="https://www.linkedin.com/in/drewrschwarz/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Looking to scale your business with a proven performer?
+            <span>Reach out today via LinkedIn →</span>
+          </a>
+        </div>
+
+        <nav class="links" aria-label="Featured websites">
+          <a
+            class="link-card"
+            href="https://haywardturnstiles.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="link-title">Hayward Turnstiles</span>
+            <span class="link-description">
+              American made pedestrian access control solutions for security
+              professionals and facilities nationwide.
+            </span>
+            <span class="link-action">Visit website →</span>
+          </a>
+
+          <a
+            class="link-card"
+            href="https://excavationsolutionsct.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="link-title">Excavation Solutions CT</span>
+            <span class="link-description">
+              Excavation and site work services for residential and commercial
+              projects in Connecticut.
+            </span>
+            <span class="link-action">Visit website →</span>
+          </a>
+        </nav>
+      </div>
+
+      <footer>
+        <span>© <span id="year"></span> Drew Schwarz</span>
+        <span>drewschwarz.com</span>
+      </footer>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
