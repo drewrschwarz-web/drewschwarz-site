@@ -4,30 +4,76 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Drew Schwarz</title>
+  <title>Drew Schwarz | Growth Strategy, Sales and Business Scaling</title>
+
   <meta
     name="description"
-    content="Drew Schwarz is a sales and business development leader based in Connecticut."
+    content="Drew Schwarz is an entrepreneur and growth strategist specializing in access control, sales growth systems, digital marketing, business development, and small business scaling."
   >
+  <meta name="author" content="Drew Schwarz">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#071018">
+
+  <link rel="canonical" href="https://drewschwarz.com/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Drew Schwarz">
+  <meta property="og:title" content="Drew Schwarz | Growth Strategy, Sales and Business Scaling">
+  <meta
+    property="og:description"
+    content="Entrepreneur and growth strategist specializing in access control, sales growth systems, digital marketing, business development, and small business scaling."
+  >
+  <meta property="og:url" content="https://drewschwarz.com/">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Drew Schwarz | Growth Strategy, Sales and Business Scaling">
+  <meta
+    name="twitter:description"
+    content="Entrepreneur and growth strategist specializing in access control, sales growth systems, digital marketing, business development, and small business scaling."
+  >
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Drew Schwarz",
+    "url": "https://drewschwarz.com/",
+    "sameAs": [
+      "https://www.linkedin.com/in/drewrschwarz/"
+    ],
+    "description": "Entrepreneur and growth strategist specializing in access control, sales growth systems, digital marketing, business development, and small business scaling.",
+    "knowsAbout": [
+      "Access control",
+      "Security industry",
+      "Business development",
+      "Digital marketing",
+      "Sales growth systems",
+      "Small business scaling",
+      "Brand positioning"
+    ]
+  }
+  </script>
 
   <style>
     :root {
-      --background: #0b1220;
-      --surface: rgba(15, 23, 42, 0.70);
-      --surface-strong: rgba(17, 24, 39, 0.86);
-      --text: #ecf2ff;
-      --muted: #a7b3c7;
-      --border: rgba(255, 255, 255, 0.09);
-      --accent: #7aa2ff;
-      --accent-dark: #274690;
-      --accent-soft: #4b6cb7;
-      --accent-warm: #b79d6b;
-      --glow-1: rgba(75, 108, 183, 0.24);
-      --glow-2: rgba(122, 162, 255, 0.18);
-      --glow-3: rgba(183, 157, 107, 0.14);
-      --shadow: 0 32px 90px rgba(0, 0, 0, 0.34);
-      --radius-large: 28px;
-      --radius-medium: 18px;
+      --black: #05070a;
+      --black-soft: #0a0e13;
+      --black-raised: #0e141c;
+      --white: #ffffff;
+      --heading: #f8fbff;
+      --body: #b9c5d1;
+      --body-bright: #d6dfe8;
+      --line: rgba(255, 255, 255, 0.11);
+      --blue: #0758f7;
+      --blue-bright: #00a9ee;
+      --aqua: #3465ff;
+      --aqua-soft: #6f8fff;
+      --shadow: 0 30px 90px rgba(1, 8, 18, 0.38);
+      --radius-xl: 32px;
+      --radius-lg: 23px;
+      --radius-md: 17px;
     }
 
     * {
@@ -41,6 +87,14 @@
     body {
       margin: 0;
       min-height: 100vh;
+      overflow-x: hidden;
+      color: var(--heading);
+      background:
+        radial-gradient(circle at 12% 4%, rgba(255, 255, 255, 0.15), transparent 23rem),
+        radial-gradient(circle at 91% 24%, rgba(134, 255, 245, 0.23), transparent 28rem),
+        radial-gradient(circle at 20% 87%, rgba(0, 42, 143, 0.28), transparent 34rem),
+        linear-gradient(125deg, #064be4 0%, #008fe6 47%, #13d8cd 100%);
+      background-attachment: fixed;
       font-family:
         Inter,
         ui-sans-serif,
@@ -49,40 +103,19 @@
         BlinkMacSystemFont,
         "Segoe UI",
         sans-serif;
-      color: var(--text);
-      background:
-        radial-gradient(circle at 12% 14%, var(--glow-1), transparent 30rem),
-        radial-gradient(circle at 88% 16%, var(--glow-3), transparent 26rem),
-        radial-gradient(circle at 76% 82%, var(--glow-2), transparent 34rem),
-        linear-gradient(135deg, #08101d 0%, #0f1726 46%, #121b2c 100%);
-      position: relative;
-      overflow-x: hidden;
-    }
-
-    body::before,
-    body::after {
-      content: "";
-      position: fixed;
-      inset: auto;
-      width: 30rem;
-      height: 30rem;
-      border-radius: 999px;
-      filter: blur(46px);
-      pointer-events: none;
-      z-index: 0;
-      opacity: 0.58;
     }
 
     body::before {
-      top: -8rem;
-      right: -8rem;
-      background: radial-gradient(circle, rgba(75, 108, 183, 0.34), transparent 62%);
-    }
-
-    body::after {
-      bottom: -9rem;
-      left: -8rem;
-      background: radial-gradient(circle, rgba(183, 157, 107, 0.18), transparent 62%);
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background:
+        linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+      background-size: 72px 72px;
+      mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent 72%);
+      opacity: 0.38;
     }
 
     a {
@@ -92,88 +125,144 @@
     .page {
       position: relative;
       z-index: 1;
-      width: min(1120px, calc(100% - 32px));
-      min-height: 100vh;
+      width: min(1180px, calc(100% - 34px));
       margin: 0 auto;
+      padding: 26px 0 34px;
+    }
+
+    .topbar {
       display: flex;
       align-items: center;
-      padding: 48px 0;
+      justify-content: space-between;
+      min-height: 62px;
+      padding: 0 6px;
     }
 
-    .panel {
-      width: 100%;
-      overflow: hidden;
-      background:
-        linear-gradient(180deg, rgba(17, 24, 39, 0.92), rgba(12, 19, 32, 0.82)),
-        var(--surface);
-      border: 1px solid rgba(255, 255, 255, 0.10);
-      border-radius: var(--radius-large);
-      box-shadow: var(--shadow);
-      backdrop-filter: blur(18px);
-      position: relative;
-      isolation: isolate;
+    .mark {
+      display: inline-flex;
+      align-items: center;
+      gap: 11px;
+      color: #03111d;
+      font-size: 0.76rem;
+      font-weight: 900;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
     }
 
-    .panel::before {
+    .mark::before {
       content: "";
-      position: absolute;
-      inset: 0;
+      width: 12px;
+      height: 12px;
+      border-radius: 3px;
+      background: var(--black);
+      transform: rotate(45deg);
+    }
+
+    .top-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      min-height: 42px;
+      padding: 0 17px;
+      color: #02131c;
+      font-size: 0.78rem;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      text-decoration: none;
+      text-transform: uppercase;
+      border: 1px solid rgba(2, 19, 28, 0.18);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.28);
+      backdrop-filter: blur(15px);
+      transition: transform 180ms ease, background 180ms ease;
+    }
+
+    .top-link::after {
+      content: "↗";
+      font-size: 1rem;
+    }
+
+    .top-link:hover,
+    .top-link:focus-visible {
+      transform: translateY(-2px);
+      background: rgba(255, 255, 255, 0.48);
+      outline: none;
+    }
+
+    .surface {
+      overflow: hidden;
+      color: var(--heading);
+      border: 1px solid rgba(255, 255, 255, 0.11);
+      border-radius: var(--radius-xl);
       background:
-        radial-gradient(circle at top right, rgba(122, 162, 255, 0.08), transparent 26rem),
-        radial-gradient(circle at bottom left, rgba(183, 157, 107, 0.06), transparent 24rem);
-      z-index: -1;
+        radial-gradient(circle at 93% 4%, rgba(24, 223, 209, 0.08), transparent 24rem),
+        linear-gradient(145deg, rgba(7, 11, 16, 0.98), rgba(4, 7, 11, 0.95));
+      box-shadow: var(--shadow);
     }
 
     .hero {
       display: grid;
-      grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
-      gap: 48px;
-      padding: clamp(36px, 7vw, 84px);
+      grid-template-columns: minmax(0, 1.3fr) minmax(300px, 0.7fr);
+      gap: clamp(44px, 7vw, 90px);
+      padding: clamp(42px, 7vw, 86px);
     }
 
-    .eyebrow {
+    .kicker {
       display: inline-flex;
       align-items: center;
-      gap: 10px;
-      margin: 0 0 20px;
-      padding: 10px 14px;
-      color: #d6e2ff;
-      font-size: 0.78rem;
-      font-weight: 800;
-      letter-spacing: 0.14em;
+      gap: 11px;
+      margin: 0 0 22px;
+      color: var(--aqua-soft);
+      font-size: 0.76rem;
+      font-weight: 900;
+      letter-spacing: 0.18em;
       text-transform: uppercase;
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: 999px;
-      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
-      width: fit-content;
     }
 
-    .eyebrow::before {
+    .kicker::before {
       content: "";
-      width: 10px;
-      height: 10px;
-      border-radius: 999px;
-      background: linear-gradient(135deg, var(--accent), var(--accent-warm));
-      box-shadow: 0 0 0 6px rgba(122, 162, 255, 0.08);
+      width: 36px;
+      height: 2px;
+      background: linear-gradient(90deg, #1747d1, #5f83ff);
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      text-wrap: pretty;
     }
 
     h1 {
       margin: 0;
       max-width: 760px;
-      font-size: clamp(3.25rem, 9vw, 7.5rem);
-      line-height: 0.92;
-      letter-spacing: -0.065em;
-      color: #f6f8fe;
-      text-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+      color: var(--white);
+      font-size: clamp(4rem, 10vw, 8rem);
+      line-height: 0.88;
+      letter-spacing: -0.075em;
+    }
+
+    .surname {
+      display: block;
+      color: var(--white);
+    }
+
+    .role-line {
+      max-width: 690px;
+      margin: 28px 0 0;
+      color: var(--white);
+      font-size: clamp(1.06rem, 2vw, 1.34rem);
+      font-style: italic;
+      font-weight: 700;
+      line-height: 1.55;
     }
 
     .bio {
-      max-width: 720px;
-      margin: 30px 0 0;
-      color: var(--muted);
-      font-size: clamp(1.02rem, 2vw, 1.2rem);
-      line-height: 1.72;
+      max-width: 750px;
+      margin-top: 30px;
+      color: var(--body);
+      font-size: 1.01rem;
+      line-height: 1.78;
     }
 
     .bio p {
@@ -184,141 +273,393 @@
       margin-top: 18px;
     }
 
-
-    .cta {
-      display: inline-flex;
-      flex-direction: column;
-      gap: 8px;
-      margin-top: 30px;
-      padding: 22px 24px;
-      max-width: 620px;
-      color: #ffffff;
-      text-decoration: none;
-      background:
-        linear-gradient(135deg, #233a6b 0%, #182942 52%, #5f4f33 100%);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: var(--radius-medium);
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.30);
-      position: relative;
-      overflow: hidden;
-      transition:
-        transform 180ms ease,
-        box-shadow 180ms ease;
-    }
-
-    .cta::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(120deg, rgba(255, 255, 255, 0.18), transparent 45%, rgba(255, 255, 255, 0.04));
-      pointer-events: none;
-    }
-
-    .cta:hover,
-    .cta:focus-visible {
-      transform: translateY(-3px);
-      box-shadow: 0 22px 44px rgba(0, 0, 0, 0.36);
-      outline: none;
-    }
-
-    .cta span {
-      font-size: 0.92rem;
-      font-weight: 800;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-    }
-
-    .links {
+    .cta-row {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
       gap: 16px;
+      margin-top: 34px;
     }
 
-    .link-card {
-      display: block;
-      padding: 24px;
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 13px;
+      min-height: 58px;
+      padding: 0 25px;
+      color: #ffffff;
+      font-weight: 900;
       text-decoration: none;
-      background:
-        linear-gradient(180deg, rgba(24, 33, 49, 0.92), rgba(14, 21, 34, 0.84));
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: var(--radius-medium);
-      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.20);
-      transition:
-        transform 180ms ease,
-        box-shadow 180ms ease,
-        border-color 180ms ease;
+      border-radius: 999px;
+      background: linear-gradient(105deg, #3465ff 0%, #1747d1 100%);
+      box-shadow: 0 16px 38px rgba(23, 71, 209, 0.32);
+      transition: transform 180ms ease, box-shadow 180ms ease;
     }
 
-    .link-card:hover,
-    .link-card:focus-visible {
-      transform: translateY(-4px);
-      border-color: rgba(122, 162, 255, 0.26);
-      box-shadow: 0 20px 42px rgba(0, 0, 0, 0.28);
+    .button::after {
+      content: "↗";
+      font-size: 1.08rem;
+    }
+
+    .button:hover,
+    .button:focus-visible {
+      transform: translateY(-3px);
+      box-shadow: 0 22px 46px rgba(23, 71, 209, 0.42);
       outline: none;
     }
 
-    .link-card span {
-      display: block;
-    }
-
-    .link-title {
-      font-size: 1.1rem;
-      font-weight: 800;
-      color: #f2f6ff;
-    }
-
-    .link-description {
-      margin-top: 8px;
-      color: var(--muted);
-      font-size: 0.95rem;
+    .cta-note {
+      max-width: 310px;
+      color: #8d9aaa;
+      font-size: 0.82rem;
       line-height: 1.5;
     }
 
-    .link-action {
-      margin-top: 22px;
-      color: #d4c09a;
-      font-size: 0.88rem;
-      font-weight: 800;
-      letter-spacing: 0.04em;
+    .side {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 18px;
+    }
+
+    .side-heading {
+      margin: 0 0 2px;
+      color: #8391a2;
+      font-size: 0.74rem;
+      font-weight: 900;
+      letter-spacing: 0.18em;
       text-transform: uppercase;
+    }
+
+    .venture-card {
+      position: relative;
+      display: block;
+      min-height: 170px;
+      overflow: hidden;
+      padding: 25px;
+      color: var(--heading);
+      text-decoration: none;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      background:
+        radial-gradient(circle at 100% 0%, rgba(52, 101, 255, 0.20), transparent 12rem),
+        linear-gradient(145deg, rgba(16, 23, 32, 0.97), rgba(7, 11, 16, 0.98));
+      transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+    }
+
+    .venture-card:hover,
+    .venture-card:focus-visible {
+      transform: translateY(-5px);
+      border-color: rgba(52, 101, 255, 0.58);
+      box-shadow: 0 20px 44px rgba(0, 0, 0, 0.27);
+      outline: none;
+    }
+
+    .venture-number {
+      color: var(--aqua);
+      font-size: 0.73rem;
+      font-weight: 900;
+      letter-spacing: 0.16em;
+    }
+
+    .venture-title {
+      display: block;
+      margin-top: 17px;
+      color: var(--white);
+      font-size: 1.2rem;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+    }
+
+    .venture-description {
+      display: block;
+      max-width: 270px;
+      margin-top: 9px;
+      color: var(--body);
+      font-size: 0.91rem;
+      line-height: 1.55;
+    }
+
+    .venture-action {
+      position: absolute;
+      right: 22px;
+      bottom: 19px;
+      color: var(--white);
+      font-size: 1.1rem;
+      font-weight: 900;
+    }
+
+    .expertise {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-top: 6px;
+    }
+
+    .expertise span {
+      padding: 9px 12px;
+      color: #b8c6d5;
+      font-size: 0.72rem;
+      font-weight: 800;
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.035);
+    }
+
+    .work {
+      margin-top: 22px;
+      padding: clamp(40px, 6vw, 76px);
+    }
+
+    .section-intro {
+      display: grid;
+      grid-template-columns: minmax(0, 0.8fr) minmax(280px, 1.2fr);
+      gap: clamp(34px, 7vw, 90px);
+      align-items: end;
+      padding-bottom: 38px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .section-label {
+      margin: 0 0 14px;
+      color: var(--aqua);
+      font-size: 0.75rem;
+      font-weight: 900;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin: 0;
+      color: var(--white);
+      font-size: clamp(2.55rem, 6vw, 5.2rem);
+      line-height: 0.96;
+      letter-spacing: -0.055em;
+    }
+
+    .section-copy {
+      margin: 0;
+      color: var(--body);
+      font-size: 1.03rem;
+      line-height: 1.75;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .service {
+      min-height: 235px;
+      padding: 25px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      background:
+        radial-gradient(circle at 100% 0%, rgba(7, 88, 247, 0.12), transparent 12rem),
+        linear-gradient(155deg, rgba(16, 22, 30, 0.96), rgba(7, 10, 15, 0.98));
+      transition: transform 180ms ease, border-color 180ms ease;
+    }
+
+    .service:hover {
+      transform: translateY(-4px);
+      border-color: rgba(52, 101, 255, 0.52);
+    }
+
+    .service-number {
+      color: var(--aqua);
+      font-size: 0.72rem;
+      font-weight: 900;
+      letter-spacing: 0.16em;
+    }
+
+    h3 {
+      margin: 26px 0 0;
+      color: var(--white);
+      font-size: 1.23rem;
+      line-height: 1.25;
+      letter-spacing: -0.025em;
+    }
+
+    .service p {
+      margin: 13px 0 0;
+      color: var(--body);
+      font-size: 0.93rem;
+      line-height: 1.65;
+    }
+
+    .closing {
+      position: relative;
+      margin-top: 22px;
+      overflow: hidden;
+      padding: clamp(42px, 7vw, 78px);
+      border: 1px solid rgba(255, 255, 255, 0.13);
+      border-radius: var(--radius-xl);
+      background:
+        radial-gradient(circle at 90% 12%, rgba(52, 101, 255, 0.18), transparent 23rem),
+        linear-gradient(138deg, rgba(5, 7, 10, 0.99), rgba(9, 16, 23, 0.98));
+      box-shadow: var(--shadow);
+    }
+
+    .closing::after {
+      content: "";
+      position: absolute;
+      right: -150px;
+      bottom: -190px;
+      width: 430px;
+      height: 430px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, rgba(7, 88, 247, 0.25), rgba(52, 101, 255, 0.18));
+      filter: blur(16px);
+      pointer-events: none;
+    }
+
+    .closing-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 850px;
+    }
+
+    .closing p {
+      max-width: 750px;
+      margin: 24px 0 0;
+      color: var(--body);
+      font-size: 1.04rem;
+      line-height: 1.75;
+    }
+
+    .closing .button {
+      margin-top: 30px;
     }
 
     footer {
       display: flex;
+      align-items: center;
       justify-content: space-between;
-      gap: 20px;
-      padding: 22px clamp(28px, 7vw, 84px);
-      color: var(--muted);
-      font-size: 0.84rem;
-      border-top: 1px solid rgba(255, 255, 255, 0.08);
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.04));
+      gap: 22px;
+      padding: 22px 6px 0;
+      color: rgba(2, 18, 28, 0.75);
+      font-size: 0.8rem;
+      font-weight: 800;
     }
 
-    @media (max-width: 820px) {
+    .footer-accent {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .footer-accent::before {
+      content: "";
+      width: 48px;
+      height: 2px;
+      background: var(--black);
+    }
+
+    @media (max-width: 920px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .side {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .side-heading,
+      .expertise {
+        grid-column: 1 / -1;
+      }
+
+      .services {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 700px) {
+      body {
+        background-attachment: scroll;
+      }
+
       .page {
-        width: min(100% - 20px, 680px);
-        padding: 10px 0;
+        width: min(100% - 18px, 640px);
+        padding-top: 14px;
+      }
+
+      .topbar {
+        min-height: 50px;
+      }
+
+      .mark {
+        font-size: 0.65rem;
+      }
+
+      .top-link {
+        min-height: 38px;
+        padding: 0 14px;
+        font-size: 0.7rem;
+      }
+
+      .surface,
+      .closing {
+        border-radius: 23px;
       }
 
       .hero {
-        grid-template-columns: 1fr;
-        gap: 38px;
-        padding: 36px 24px;
+        gap: 42px;
+        padding: 35px 24px 30px;
       }
 
       h1 {
-        font-size: clamp(3.2rem, 18vw, 5.3rem);
+        font-size: clamp(3.65rem, 19vw, 5.7rem);
+      }
+
+      .role-line {
+        margin-top: 23px;
       }
 
       .bio {
-        margin-top: 24px;
-        font-size: 1.05rem;
+        font-size: 0.98rem;
+        line-height: 1.7;
+      }
+
+      .button {
+        width: 100%;
+        text-align: center;
+      }
+
+      .cta-note {
+        max-width: none;
+      }
+
+      .side {
+        display: flex;
+      }
+
+      .work,
+      .closing {
+        padding: 34px 24px;
+      }
+
+      .section-intro {
+        grid-template-columns: 1fr;
+        align-items: start;
+      }
+
+      .services {
+        grid-template-columns: 1fr;
+      }
+
+      .service {
+        min-height: 0;
       }
 
       footer {
         flex-direction: column;
-        padding: 20px 24px;
+        align-items: flex-start;
+        padding: 20px 5px 0;
       }
     }
 
@@ -327,7 +668,10 @@
         scroll-behavior: auto;
       }
 
-      .link-card {
+      .button,
+      .top-link,
+      .venture-card,
+      .service {
         transition: none;
       }
     }
@@ -336,83 +680,196 @@
 
 <body>
   <main class="page">
-    <section class="panel" aria-labelledby="page-title">
+    <header class="topbar">
+      <div class="mark">Connecticut built</div>
+
+      <a
+        class="top-link"
+        href="https://www.linkedin.com/in/drewrschwarz/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        LinkedIn
+      </a>
+    </header>
+
+    <section class="surface" aria-labelledby="page-title">
       <div class="hero">
         <div>
-          <p class="eyebrow">Connecticut</p>
+          <p class="kicker">Entrepreneur • Growth strategist • Operator</p>
 
-          <h1 id="page-title">Drew Schwarz</h1>
+          <h1 id="page-title">
+            Drew
+            <span class="surname">Schwarz</span>
+          </h1>
+
+          <p class="role-line">
+            Building disciplined growth engines at the intersection of industry expertise, modern sales execution, and digital strategy.
+          </p>
+
           <div class="bio">
             <p>
-              I am an entrepreneur, growth strategist, and opinion leader in the
-              Access Control and Security industries. Areas of expertise include
-              business development, digital marketing, and small business scaling.
+              I am an entrepreneur, growth strategist, and opinion leader in the Access Control and Security industries. Areas of expertise include business development, digital marketing, and small business scaling.
             </p>
 
             <p>
-              My work sits at the intersection of traditional industry knowledge,
-              modern sales execution, and digital marketing, with a focus on
-              building growth engines that are disciplined, measurable, and built
-              to last.
+              My work sits at the intersection of traditional industry knowledge, modern sales execution, and digital marketing, with a focus on building growth engines that are disciplined, measurable, and built to last.
             </p>
 
             <p>
-              I am particularly passionate about advancing the access control
-              industry through better ideas, stronger partnerships, and a more
-              modern approach to sales and marketing. I currently focus on
-              empowering growth at Hayward Turnstiles, Excavation Solutions, and
-              other entrepreneurial ventures, while proudly supporting the
-              continued success of Connecticut small businesses.
+              I am particularly passionate about advancing the access control industry through better ideas, stronger partnerships, and a more modern approach to sales and marketing. I currently focus on empowering growth at Hayward Turnstiles, Excavation Solutions, and other entrepreneurial ventures, while proudly supporting the continued success of Connecticut small businesses.
             </p>
           </div>
 
-<a
-            class="cta"
-            href="https://www.linkedin.com/in/drewrschwarz/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Looking to scale your business with a proven performer?
-            <span>Reach out today via LinkedIn →</span>
-          </a>
+          <div class="cta-row">
+            <a
+              class="button"
+              href="https://www.linkedin.com/in/drewrschwarz/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Reach out via LinkedIn
+            </a>
+
+            <span class="cta-note">
+              Looking to scale your business with a proven performer?
+            </span>
+          </div>
         </div>
 
-        <nav class="links" aria-label="Featured websites">
+        <aside class="side" aria-label="Featured ventures">
+          <p class="side-heading">Empowering growth at</p>
+
           <a
-            class="link-card"
+            class="venture-card"
             href="https://haywardturnstiles.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span class="link-title">Hayward Turnstiles</span>
-            <span class="link-description">
-              American made pedestrian access control solutions for security
-              professionals and facilities nationwide.
+            <span class="venture-number">01</span>
+            <span class="venture-title">Hayward Turnstiles</span>
+            <span class="venture-description">
+              American made pedestrian access control solutions for security professionals and facilities nationwide.
             </span>
-            <span class="link-action">Visit website →</span>
+            <span class="venture-action">↗</span>
           </a>
 
           <a
-            class="link-card"
+            class="venture-card"
             href="https://excavationsolutionsct.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span class="link-title">Excavation Solutions CT</span>
-            <span class="link-description">
-              Excavation and site work services for residential and commercial
-              projects in Connecticut.
+            <span class="venture-number">02</span>
+            <span class="venture-title">Excavation Solutions CT</span>
+            <span class="venture-description">
+              Excavation and site work services for residential and commercial projects across Connecticut.
             </span>
-            <span class="link-action">Visit website →</span>
+            <span class="venture-action">↗</span>
           </a>
-        </nav>
+
+          <div class="expertise" aria-label="Areas of expertise">
+            <span>Access Control</span>
+            <span>Business Development</span>
+            <span>Digital Marketing</span>
+            <span>Small Business Scaling</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="surface work" aria-labelledby="work-title">
+      <div class="section-intro">
+        <div>
+          <p class="section-label">Growth partnership</p>
+          <h2 id="work-title">Let’s Work Together</h2>
+        </div>
+
+        <p class="section-copy">
+          I work with business owners, leadership teams, and growing companies that are ready to build a stronger foundation for growth. My approach combines practical operating experience, modern sales strategy, digital marketing, and disciplined execution.
+        </p>
       </div>
 
-      <footer>
-        <span>© <span id="year"></span> Drew Schwarz</span>
-        <span>drewschwarz.com</span>
-      </footer>
+      <div class="services">
+        <article class="service">
+          <span class="service-number">01</span>
+          <h3>Strategic Consulting</h3>
+          <p>
+            Clear, practical guidance for business owners navigating growth, new opportunities, operational challenges, or important strategic decisions.
+          </p>
+        </article>
+
+        <article class="service">
+          <span class="service-number">02</span>
+          <h3>Small Business Scaling</h3>
+          <p>
+            Building the systems, processes, and structure required to grow revenue without sacrificing service, quality, or control.
+          </p>
+        </article>
+
+        <article class="service">
+          <span class="service-number">03</span>
+          <h3>Sales Growth Systems</h3>
+          <p>
+            Improving sales strategy, lead management, follow up processes, CRM execution, team accountability, and conversion performance.
+          </p>
+        </article>
+
+        <article class="service">
+          <span class="service-number">04</span>
+          <h3>Digital Marketing</h3>
+          <p>
+            Developing modern digital strategies that improve visibility, generate qualified opportunities, and turn websites and online channels into measurable growth engines.
+          </p>
+        </article>
+
+        <article class="service">
+          <span class="service-number">05</span>
+          <h3>Business Development</h3>
+          <p>
+            Identifying new markets, partnerships, distribution channels, and revenue opportunities that support sustainable long term growth.
+          </p>
+        </article>
+
+        <article class="service">
+          <span class="service-number">06</span>
+          <h3>Brand Positioning</h3>
+          <p>
+            Helping businesses communicate their value more clearly, strengthen their market position, and stand apart from competitors.
+          </p>
+        </article>
+      </div>
     </section>
+
+    <section class="closing" aria-labelledby="closing-title">
+      <div class="closing-inner">
+        <p class="section-label">Start a conversation</p>
+
+        <h2 id="closing-title">Ready to Build What Comes Next?</h2>
+
+        <p>
+          Whether you are launching a new venture, scaling an established company, or looking for a fresh perspective on growth, let’s start a conversation.
+        </p>
+
+        <p>
+          Connect with me on LinkedIn to discuss your business and where you want to take it next.
+        </p>
+
+        <a
+          class="button"
+          href="https://www.linkedin.com/in/drewrschwarz/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Connect on LinkedIn
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <span>© <span id="year"></span> Drew Schwarz</span>
+      <span class="footer-accent">drewschwarz.com</span>
+    </footer>
   </main>
 
   <script>
